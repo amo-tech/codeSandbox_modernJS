@@ -45,3 +45,28 @@ console.log(message101102);
 // デフォルト値、引数
 const sayHello = (name = "guest") => console.log(`Welcome, ${name}!`);
 sayHello(); // 引数を入れないとundefinedになる
+
+// スプレッド構文
+const arr101201 = [0, 1, 2, 3];
+//console.log(arr101201);
+//console.log(...arr101201);
+
+// const add101202 = (num1, num2, num3, num4) => console.log(num1 + num2 + num3 + num4);
+// add101202(arr101201[0], arr101201[1], arr101201[2], arr101201[3]);
+// add101202(...arr101201);
+
+const [num1, num2, ...arrAdd] = arr101201;
+// console.log(num1);
+// console.log(num2);
+// console.log(arrAdd);
+
+// 配列のコピー、結合
+// スプレッド構文でコピーすると参照が変わらない(値を新しく代入しても元の配列はそのまま)
+const arr1 = [10, 20];
+const arr2 = [30, 40];
+const arr3 = [...arr1];
+console.log(arr1, arr2, arr3);
+
+const arr4 = [...arr1, ...arr2];
+console.log(arr4);
+
