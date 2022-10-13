@@ -70,3 +70,29 @@ console.log(arr1, arr2, arr3);
 const arr4 = [...arr1, ...arr2];
 console.log(arr4);
 
+// filter, map
+const nameArr = ["kaomi", "shime", "kyomu"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// const nameArr2 = nameArr.map((name) =>{
+//   return name;
+// })
+// console.log(nameArr2);
+// nameArr.map((name, index) => console.log(index, name));
+
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// })
+// console.log(newNumArr);
+
+const newNameArr = nameArr.map((name) => {
+  if (name === "kyomu"){
+    return `***${"kyomu"}***`
+  } else {
+    return name
+  }
+});
+console.log(newNameArr);
