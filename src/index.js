@@ -88,11 +88,25 @@ const nameArr = ["kaomi", "shime", "kyomu"];
 // })
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name) => {
-  if (name === "kyomu"){
-    return `***${"kyomu"}***`
-  } else {
-    return name
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "kyomu"){
+//     return `***${"kyomu"}***`
+//   } else {
+//     return name
+//   }
+// });
+// console.log(newNameArr);
+
+// 三項演算子
+// ? 条件がtrueの時、: 条件がfalseの時
+// const num = 1 > 0 ? "true" : "false";
+// console.log(num);
+
+// const numN = "a";
+// const formattedNum = typeof numN === 'number' ? numN.toLocaleString() : "this is not number";
+// console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "over 100" : "kyomu";
+}
+console.log(checkSum(30,78));
