@@ -1,8 +1,10 @@
 import "./styles.css";
 
 const onClickAdd = () => {
-  alert();
-  console.log("追加ボタン押しました")
+  // テキストボックスの値を取得し、初期化する
+  const inputText = document.getElementById("add-text").value
+  document.getElementById("add-text").value = ""
+  alert(inputText);
 };
 
 document.getElementById("add-button").addEventListener("click", () => onClickAdd());　//イベントリスナー調べる
