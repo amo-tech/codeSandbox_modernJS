@@ -7,23 +7,23 @@ const onClickAdd = () => {
 
   // li作成
   const li = document.createElement("li");
-  console.log(li);
 
   // div生成
   const div = document.createElement("div");
   div.className = "list-row";
-  console.log(div);
 
   // span生成
   const span = document.createElement("span");
   span.innerText = inputText;
-  console.log(span);
-
-  // li生成
-  // const li = document.createElement("li");
-  // li.innerText = inputText;
 
   // 子要素に各要素を追加
+  li.appendChild(div);
+  div.appendChild(span);
+
+  // 未完了リストに追加
+  document.getElementById("incomplete-list").appendChild(li);
+  console.log(li);
+
 
 };
 
