@@ -16,14 +16,28 @@ const onClickAdd = () => {
   const span = document.createElement("span");
   span.innerText = inputText;
 
+  // button(完了)追加
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    alert("完了");
+  })
+
+  // button(削除)追加
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    alert("削除");
+  })
+
   // 子要素に各要素を追加
   li.appendChild(div);
   div.appendChild(span);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
 
   // 未完了リストに追加
   document.getElementById("incomplete-list").appendChild(li);
-  console.log(li);
-
 
 };
 
