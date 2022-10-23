@@ -114,4 +114,7 @@ const onClickAdd = () => {
 
 };
 
-document.getElementById("add-button").addEventListener("click", () => onClickAdd());　//イベントリスナー調べる
+document.getElementById("add-button").addEventListener("click", () => onClickAdd());　
+
+//イベントリスナー調べる
+// コンポーネント化
